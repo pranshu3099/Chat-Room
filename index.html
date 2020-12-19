@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="heading" id="heading">
+            <h1 class="header" id="header">Movies Hub Chat Forum</h1>
+        </div>
+        <div class="sub-content">
+            <p class="sub-heading" id="sub-heading">Choose a chat room</p>
+            <div class="buttons" id="buttons">
+                <button class="general roombtn" id="general">#Movies</button>
+                <button class="gaming roombtn" id="gaming">#Series</button>
+                <button class="music roombtn" id="music">#Music</button>
+                <button class="coding roombtn" id="coding">#Gaming</button>
+            
+        </div>
+        <ul class="msg" id="msg"></ul>
+        </div>
+        <div class="new-div">
+           <form action="">
+            <div class="chat" id="chat">
+                <span class="message">Your Message:</span><input type="text" id="text" class="text" placeholder="Type...">
+                <input type="submit" value="send"  id="send"  class="send">
+            </div>
+    
+            <div class="update" id="update">
+                <span class="name">Update Name:</span><input type="text" id="name-text" class="name-text" placeholder="Type...">
+                <input type="submit" value="update" id="update-name" class="update-name">
+            </div>
+           </form>
+        </div>
+        <p class="short-msg" id="short-msg">
+
+        </p>
+   </div>
+
+     <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+
+
+   <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+    
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+   
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      </script>
+    <script src="scripts/esrxdctfvgh.js"></script>
+    <script src="scripts/chat.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
